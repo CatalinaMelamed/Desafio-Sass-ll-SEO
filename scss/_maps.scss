@@ -1,0 +1,20 @@
+//MAP Redes Sociales 
+$mapRedes:(facebook: #90b2fd, whatsapp: #74dd9c, instagram:#fc84ac);
+
+@each $red, $color in $mapRedes {
+    .#{$red} {
+        background:$color;        
+    }
+} 
+
+// MAP-GET COPYRIGHT
+
+$estiloCopy:(color:$color-textoFooter, tamFuente:15px);
+
+.copyright {
+    color: map-get($map: $estiloCopy, $key: color);
+    font-size: map-get($map: $estiloCopy, $key: tamFuente);
+}
+
+//MAP Responsive MIXIN
+$breakpoints: (sm : 333px, md:540px, lg:1256px)

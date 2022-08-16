@@ -1,0 +1,124 @@
+// MIXIN
+//--------RESPONSIVE------------
+@mixin media-up ($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)){
+        @content;
+    }
+}
+
+.tituloHeader{
+    @include media-up(sm){
+        font-size: 2em;
+        text-shadow: 0 06px #FEFEF0;
+        font-style: oblique;
+        font-family: $font-titulos;
+        color: $color-logo;
+    }
+    @include media-up(md){
+        font-size: 3em;
+        text-shadow: 0 06px #FEFEF0;
+        font-style: oblique;
+        font-family: $font-titulos;
+        color: $color-logo;
+    }
+    @include media-up(lg){
+        font-size: 5em;
+        text-shadow: 0 06px #FEFEF0;
+        font-style: oblique;
+        font-family: $font-titulos;
+        color: $color-logo;
+    }
+}
+.iconRedes{
+    @include media-up(sm){
+        margin-left: 0px;
+    }
+    @include media-up(md){
+        margin-left: 100px;
+    }
+    @include media-up(lg){
+        margin-left: 60px;
+        
+    }
+}
+
+// SIN PARAMETROS
+@mixin titulosMain {
+    font-family: 'Teko', Arial, Helvetica;
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    color: $color-titulosmain;
+    text-shadow: 0 05px#7a4a41;
+    font-size: 3.5em;    
+    margin-top: 40px; 
+}
+
+.tituloConEstilo{
+    @include titulosMain();
+}
+
+@mixin titulosFooter {
+    font-family: 'Teko', Arial, Helvetica;        
+    font-style: oblique;
+    color: $color-titulosmain;
+    text-shadow: 0 05px$color-textoFooter;
+    font-size: 2.5em; 
+    margin-left: 20px; 
+    margin-top: 10px;    
+}
+
+.tituloFooter{
+    @include titulosFooter()
+
+}
+
+@mixin textoFooter {
+    font-family: 'Teko', Arial, Helvetica;
+    color: $color-textoFooter;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
+
+.textoFooter{
+    @include textoFooter()
+}
+
+
+
+//-------------MENU----------------
+@mixin titulosBanner {
+    font-family: 'Teko', Arial, Helvetica;        
+    font-style: oblique;
+    color:$color-BannerMenu;
+    text-shadow: 0 05px$color-textoFooter;
+    font-size: 4em; 
+    margin-left: 20px; 
+    margin-top: 10px;    
+}
+
+.tituloBanner{
+    @include titulosBanner();
+    
+}
+@mixin textoBanner {
+    font-family: 'Teko', Arial, Helvetica;
+    color: $color-BannerTexto;
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+.textoBanner{
+    @include textoBanner()
+}
+//CON PARAMETROS
+
+@mixin parrafos ($size, $alineacion){
+    font-size:$size ;
+    text-align: $alineacion;
+}
+
+.parrafoConEstilo{
+    @include parrafos(18px, center)
+}
+

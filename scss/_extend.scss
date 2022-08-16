@@ -1,0 +1,13 @@
+//EXTEND
+.primerNav{
+    color: $color-parrafos;
+    text-decoration: none;
+    font-family:$font-subtitulos ;
+    font-size: x-large;
+       
+}
+
+.segundoNav{
+    @extend .primerNav;
+    color: $color-logo;
+}

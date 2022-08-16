@@ -1,0 +1,5 @@
+Se realizaron los siguientes cambios para el desafios de SASS II
+-Se creo e importo _maps.scss. Ahi se crearon clases que se aplicaron en el footer del index.html, junto con map get para el responsive
+-Se creo e importo _extend.scss. Ahi se crearon clases que se aplicaron en el texto del header de index.html y menu-html
+-Se creo e importo _mixin.scss. Ahi se crearon clases que se aplicaron en el texto index.html y /menu.html, también agregué el responsive
+-Para cumplir con el SEO, se agrego meta="description" a todas las paginas.

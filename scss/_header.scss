@@ -1,0 +1,15 @@
+header {
+    grid-area: header;
+    top: 0;
+    z-index: 2;
+    position: sticky;
+    nav {
+        background-color: $color-titulo;
+        justify-content: space-between;
+        position: static;
+        .dropdown-menu{
+            background: $color-titulo;                  
+            border: none;
+        }
+    }
+}
