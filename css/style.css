@@ -147,7 +147,8 @@ main .section-1 {
     box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
     z-index: 1; }
 
-main .carousel-control-prev-icon, main .carousel-control-next-icon {
+main .carousel-control-prev-icon,
+main .carousel-control-next-icon {
   filter: invert(108%); }
 
 main .slide img {
@@ -183,6 +184,175 @@ main .colorLink {
 
 main .cardsFondo {
   background-color: #fcf4c9; }
+
+main .titulossecundarios {
+  text-align: center; }
+
+main .event {
+  text-align: center;
+  margin-top: 60px; }
+
+main .contenedor-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px; }
+  main .contenedor-imagenes .imagen {
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px #432e2a; }
+    main .contenedor-imagenes .imagen img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+
+main .linea {
+  margin-bottom: 40px; }
+
+main .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #c25265;
+  opacity: 0.8;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: .5s ease; }
+  main .overlay h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+
+main .imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer; }
+
+@media screen and (max-width: 1000px) {
+  main .contenedor-imagenes {
+    width: 95%; } }
+
+@media screen and (max-width: 700px) {
+  main .contenedor-imagenes {
+    width: 90%; }
+    main .contenedor-imagenes .imagen {
+      width: 48%; } }
+
+@media screen and (max-width: 450px) {
+  main h1 {
+    font-size: 22px; }
+  main .contenedor-imagenes {
+    width: 98%; }
+    main .contenedor-imagenes .imagen {
+      width: 80%; } }
+
+main .tituloBanner {
+  text-align: center;
+  margin-top: 150px; }
+
+main .contenedor-formulario {
+  text-align: center;
+  background-size: cover;
+  height: 300px;
+  position: relative; }
+  main .contenedor-formulario label {
+    color: #DC453D;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: underline;
+    margin-top: 100px; }
+  main .contenedor-formulario input {
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 50px; }
+  main .contenedor-formulario .botones {
+    margin-left: 550px;
+    margin-top: 70px; }
+
+main .mainContact {
+  display: grid;
+  justify-content: space-between; }
+
+main .imgContact {
+  width: 500px;
+  height: 500px;
+  margin-top: 5vw; }
+
+main #mapa {
+  margin-top: 10vw; }
+
+main .contenedorFormulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+main .formulario {
+  margin-top: 5vw; }
+
+main .bordesForm {
+  height: 700px;
+  width: 600px;
+  border-radius: 3%;
+  border-color: #ffa18e; }
+
+main .formTitulo {
+  color: #432e2a;
+  text-shadow: 0 2px #ffa18e;
+  font-family: 'Dancing Script';
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 2.5em;
+  margin-right: 450px; }
+
+main .titulos {
+  font-family: 'Teko', Arial, Helvetica;
+  display: block;
+  width: 22%;
+  padding: 5px;
+  margin-left: 10px; }
+
+main .px {
+  border: 1px solid transparent;
+  background: #c25265;
+  opacity: 0.7;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: 10px;
+  width: 90%;
+  height: 10px;
+  text-align: center; }
+
+main .btn {
+  text-align: center; }
+
+main .mapaTitulo {
+  color: #432e2a;
+  text-shadow: 0 2px #ffa18e;
+  font-family: 'Dancing Script';
+  text-align: center;
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 2.5em; }
+
+main h5 {
+  text-align: center;
+  font-size: 1.2em;
+  font-family: 'Teko', Arial, Helvetica;
+  font-style: oblique;
+  color: #432e2a;
+  padding-bottom: 6px;
+  border: 1px;
+  border-radius: 20px; }
 
 footer {
   background-color: #FEE3E2;

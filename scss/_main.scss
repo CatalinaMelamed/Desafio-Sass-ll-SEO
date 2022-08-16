@@ -1,26 +1,30 @@
-main{
+main {
 
-    .container-Hero{
+    .container-Hero {
         background: url(/image/bannerWallpaper.jpg) no-repeat center;
-        background-size:cover;
+        background-size: cover;
         height: 650px;
         position: relative;
-        .title-color{
+
+        .title-color {
             color: $color-titulo;
             margin-top: 80px;
             font-family: $font-subtitulos;
         }
-        .subtitle-color{
+
+        .subtitle-color {
             color: $color-parrafos;
             font-family: $font-subtitulos;
         }
     }
-    .container-Separador{
+
+    .container-Separador {
         margin-top: 90px;
         text-align: center;
     }
+
     .section-1 {
-        margin-top:60px;
+        margin-top: 60px;
         margin-bottom: 100px;
 
         .row .col-md-6 .pray img {
@@ -33,59 +37,287 @@ main{
             position: relative;
         }
 
-        .panel {               
+        .panel {
             background: #ebbcd2;
-            border-radius: 3px;           
+            border-radius: 3px;
             padding: 13vmin 6vmin 20vmin 9vmin;
-            box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);    
-            z-index: 1;           
-        } 
-    }        
-    .carousel-control-prev-icon, .carousel-control-next-icon {
+            box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
         filter: invert(108%);
     }
-    .slide img{
+
+    .slide img {
         height: 65vh;
-    
+
     }
- 
+
 
     //----------MENU-----------
-    .container-Menu{
+    .container-Menu {
         background: url(/image/menu/BannerMenu.jpg) no-repeat center;
-        background-size:cover;
+        background-size: cover;
         height: 650px;
         position: relative;
         opacity: 0.7;
-        .row{
+
+        .row {
             justify-content: center;
             margin-top: 50px;
         }
 
     }
-    .container-Food{
+
+    .container-Food {
         margin-left: 60px;
         margin-right: 60px;
-        .card{
+
+        .card {
             background: $color-titulo;
             margin-top: 30PX;
         }
     }
-    .container-Card{
-        color: $color-BannerMenu;    
+
+    .container-Card {
+        color: $color-BannerMenu;
         font-family: $font-subtitulos;
         margin-left: 60px;
         margin-right: 60px;
-        
-        
+
+
     }
-    .colorLink{
+
+    .colorLink {
         color: $color-parrafos;
         text-decoration: none;
-        font-family: $font-subtitulos;         
+        font-family: $font-subtitulos;
     }
-    .cardsFondo{
+
+    .cardsFondo {
         background-color: $color-titulo;
     }
+
+    //------------Gallery------------ 
+    .titulossecundarios {
+        text-align: center;
+    }
+
+    .event {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .contenedor-imagenes {
+        display: flex;
+        width: 85%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border-radius: 3px;
+
+        .imagen {
+            width: 32%;
+            position: relative;
+            height: 250px;
+            margin-bottom: 5px;
+            box-shadow: 0px 0px 3px 0px #432e2a;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+
+    .linea {
+        margin-bottom: 40px;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgb(194, 82, 101);
+        opacity: 0.8;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: .5s ease;
+
+        h2 {
+            color: #fff;
+            font-weight: 300;
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .imagen:hover .overlay {
+        height: 100%;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 1000px) {
+        .contenedor-imagenes {
+            width: 95%;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .contenedor-imagenes {
+            width: 90%;
+
+            .imagen {
+                width: 48%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        h1 {
+            font-size: 22px;
+        }
+
+        .contenedor-imagenes {
+            width: 98%;
+
+            .imagen {
+                width: 80%;
+            }
+        }
+
+    }
+
+    //---------RESERVATION-------------
+    .tituloBanner {
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .contenedor-formulario {
+
+        text-align: center;
+        background-size: cover;
+        height: 300px;
+        position: relative;
+
+        label {
+            color: $color-BannerMenu;
+            font-weight: bold;
+            font-size: 1.5em;
+            text-decoration: underline;
+            margin-top: 100px;
+        }
+
+        input {
+            align-items: center;
+            margin-left: 150px;
+            margin-right: 50px;
+        }
+
+        .botones {
+            margin-left: 550px;
+            margin-top: 70px;
+        }
+    }
+
+    //--------CONTACT----------
+    .mainContact{
+       display: grid;
+       justify-content: space-between;
+
+
+    }
     
+    .imgContact {
+        width: 500px;
+        height: 500px;
+        margin-top: 5vw;
+    }
+
+    #mapa {
+        margin-top: 10vw;
+    }
+
+    .contenedorFormulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .formulario {
+        margin-top: 5vw;
+    }
+
+    .bordesForm {
+        height: 700px;
+        width: 600px;
+        border-radius: 3%;
+        border-color: #ffa18e;
+    }
+
+    .formTitulo {
+        color: #432e2a;
+        text-shadow: 0 2px #ffa18e;
+        font-family: 'Dancing Script';
+        text-align: center;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 2.5em;
+        margin-right: 450px;
+    }
+
+    .titulos {
+        font-family: 'Teko', Arial, Helvetica;
+        display: block;
+        width: 22%;
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .px {
+        border: 1px solid transparent;
+        background: rgb(194, 82, 101);
+        opacity: 0.7;
+        border-radius: 15px;
+        padding: 20px;
+        margin-left: 10px;
+        width: 90%;
+        height: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        text-align: center;
+    }
+
+    .mapaTitulo {
+        color: #432e2a;
+        text-shadow: 0 2px #ffa18e;
+        font-family: 'Dancing Script';
+        text-align: center;
+        font-weight: bold;
+        font-style: oblique;
+        font-size: 2.5em;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 1.2em;
+        font-family: 'Teko', Arial, Helvetica;
+        font-style: oblique;
+        color: #432e2a;
+        padding-bottom: 6px;
+        border: 1px;
+        border-radius: 20px;
+    }
 }
