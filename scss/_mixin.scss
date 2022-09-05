@@ -8,18 +8,17 @@
 
 .tituloHeader{
     @include media-up(sm){
+        display: none;            
+
+    }
+    @include media-up(md){
+        display: flex;
         font-size: 2em;
         text-shadow: 0 06px #FEFEF0;
         font-style: oblique;
         font-family: $font-titulos;
         color: $color-logo;
-    }
-    @include media-up(md){
-        font-size: 3em;
-        text-shadow: 0 06px #FEFEF0;
-        font-style: oblique;
-        font-family: $font-titulos;
-        color: $color-logo;
+        
     }
     @include media-up(lg){
         font-size: 5em;
@@ -27,6 +26,42 @@
         font-style: oblique;
         font-family: $font-titulos;
         color: $color-logo;
+    }
+}
+
+.slide img{
+    @include media-up(sm){
+               
+        height: 35vh;
+       
+    }
+    @include media-up(md){
+        
+        height: 40vh;       
+        
+    }
+    @include media-up(lg){
+        height: 75vh;
+    }
+}
+
+.img-fluid{
+    @include media-up(sm){
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+}
+
+.tituloConEstilo{
+    @include media-up(sm){
+        font-size: 2.5em;
+    }
+
+}
+.panel{
+    @include media-up(lg){
+        margin-top: 25%;
     }
 }
 .iconRedes{
@@ -42,6 +77,68 @@
     }
 }
 
+//MENU RESPONSIVE
+.tituloBanner{
+    @include media-up(sm){
+        font-size: 2.5;
+    }
+    @include media-up(lg)
+    {
+        font-size: 3em  
+    }
+}
+
+//RESERVATION RESPONSIVE
+.container-Reservation{
+    @include media-up(sm) {
+        justify-content: first baseline;
+    }
+}
+
+//ABOUT US RESPONSIVE
+
+.img-baking{
+    @include media-up(sm){
+               
+        height: 35vh;
+       
+    }
+    @include media-up(md){
+        
+        
+        width: 100vh;       
+        
+    }
+    @include media-up(lg){
+        
+        width: 100vh; 
+    }
+}
+.container-text{
+    @include media-up(sm){
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 100px;
+       
+    }
+    @include media-up(md){
+        margin-bottom: 100px;
+             
+        
+    }
+    @include media-up(lg){
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-bottom: 100px;
+    }
+
+}
+
+
+//CONTACT US RESPONSIVE
+
 // SIN PARAMETROS
 @mixin titulosMain {
     font-family: 'Teko', Arial, Helvetica;
@@ -49,8 +146,7 @@
     font-weight: bold;
     font-style: oblique;
     color: $color-titulosmain;
-    text-shadow: 0 05px#7a4a41;
-    font-size: 3.5em;    
+    text-shadow: 0 05px#7a4a41;        
     margin-top: 40px; 
 }
 
@@ -91,10 +187,10 @@
     font-family: 'Teko', Arial, Helvetica;        
     font-style: oblique;
     color:$color-BannerMenu;
-    text-shadow: 0 05px$color-textoFooter;
-    font-size: 4em; 
-    margin-left: 20px; 
-    margin-top: 10px;    
+    text-shadow: 0 05px$color-textoFooter;     
+    margin-left: 90px; 
+    margin-top: 10px; 
+     
 }
 
 .tituloBanner{
@@ -104,8 +200,8 @@
 @mixin textoBanner {
     font-family: 'Teko', Arial, Helvetica;
     color: $color-BannerTexto;
-    font-size: 1.4em;
-    margin-left: 20px;
+    font-weight: bold;
+    margin-left: 90px;
 }
 
 .textoBanner{
@@ -121,4 +217,5 @@
 .parrafoConEstilo{
     @include parrafos(18px, center)
 }
+
 
